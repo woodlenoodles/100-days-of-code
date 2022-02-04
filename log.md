@@ -1,11 +1,10 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 6th 2021 
-##### (delete me or comment me out)
+### Day 1: February 3rd 2022
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: Learned print(), input() functions and variable naming.
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts:** Struggled when trying to get 2 variables to spit out each other's values. c = a, a = b, b = c. But there is a way to do that with only 2 variables!
 
 **Link to work:** [Calculator App](http://www.example.com)
 
