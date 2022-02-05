@@ -23,3 +23,11 @@
 **Thoughts** KINDA HARD.
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/treasure-island-start
+
+### Day 4: February 5th 2022
+
+**Today's Progress**: Random modules and lists. Nested lists are annoying (treasure map). Built a rock paper scissors using random module (import random, random.randint(range))
+
+**Thoughts** Not too bad!
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/rock-paper-scissors-start
