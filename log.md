@@ -6,7 +6,7 @@
 
 **Thoughts:** Struggled when trying to get 2 variables to spit out each other's values. c = a, a = b, b = c. But there is a way to do that with only 2 variables!
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** https://replit.com/@AndrewWu21/tip-calculator-start
 
 ### Day 2: February 4th 2022
 
@@ -14,12 +14,12 @@
 
 **Thoughts** How do you write piped code?
 
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Link(s) to work**: https://replit.com/@AndrewWu21/day-3-start
 
 ### Day 3: February 4th 2022
 
 **Today's Progress**: Nested if/else/elif statements. Indentations matter! New functions: lower() e.g variable.lower() and the count() e.g variable.count(x)
 
 **Thoughts** KINDA HARD.
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/treasure-island-start
