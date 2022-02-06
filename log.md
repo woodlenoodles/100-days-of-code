@@ -34,8 +34,13 @@
 
 ### Day 5: February 5th 2022
 
-**Today's Progress**: Working with loops and range in loops.
+**Today's Progress**: Working with loops and range in loops. New functions = random.choice(list) and random.shuffle(list). Range = how many cycles to go through the list. 
+
+for x in list:
+  variable > item in list
+  variable = item in list
+(Makes variable the item in the list until it reaches the highest item)
 
 **Thoughts** Really tough at hard parts.
 
-**Link(s) to work**: https://replit.com/@AndrewWu21/rock-paper-scissors-start
+**Link(s) to work**: https://replit.com/@AndrewWu21/password-generator-start
