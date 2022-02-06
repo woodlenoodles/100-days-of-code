@@ -31,3 +31,11 @@
 **Thoughts** Not too bad!
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/rock-paper-scissors-start
+
+### Day 5: February 5th 2022
+
+**Today's Progress**: Working with loops and range in loops.
+
+**Thoughts** Really tough at hard parts.
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/rock-paper-scissors-start
