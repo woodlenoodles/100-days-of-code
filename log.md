@@ -44,3 +44,12 @@ for x in list:
 **Thoughts** Really tough at hard parts.
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/password-generator-start
+
+### Day 6: February 6th 2022
+
+**Today's Progress**: Working with while loops, indentations and defining own functions.
+
+**Thoughts** Need to get better at thinking logically and not taking the long way around solutions. Exiting the maze was really hard :(
+
+**Link(s) to work**: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=problem_world2.json&url=user_world%3Aproblem_world2.json
+
