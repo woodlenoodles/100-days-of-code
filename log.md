@@ -80,4 +80,12 @@ Kramm said use FLAGS! Boolean = TRUE/FALSE
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/Day-7-Hangman-5-Start#main.py
 
+### Day 8: February 8h 2022
+
+**Today's Progress**: Function parameters. Defining functions. Built caesar encryption. Prime number checker.
+
+**Thoughts** KINDA HARD.
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/caesar-cipher-4-start#main.py
+
 
