@@ -53,3 +53,31 @@ for x in list:
 
 **Link(s) to work**: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=problem_world2.json&url=user_world%3Aproblem_world2.json
 
+### Day 7: February 7th 2022
+
+**Today's Progress**: Built hangman. variable in/not in lists/string. 
+
+display = [ ]
+len_word = len(chosen_word)
+for i in range(len_word):
+  display += "_"
+# print(display)
+
+guess = input("Guess a letter: ").lower()
+
+for position in range(len_word): 		Range determines how many cycles the for loop runs.
+								Position starts at “0”
+  letter = chosen_word[position]		“0” position inserted into chosen_word and associates it with the first letter
+								If guess = the letter: “_” position in list is replaced by guess
+								If guess != letter: returns to the for loop and runs the next cycle
+  if letter == guess:
+    display[position] = guess
+print(display)
+
+Kramm said use FLAGS! Boolean = TRUE/FALSE
+
+**Thoughts** WE DID IT BOIZ.
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/Day-7-Hangman-5-Start#main.py
+
+
