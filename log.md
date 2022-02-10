@@ -80,12 +80,20 @@ Kramm said use FLAGS! Boolean = TRUE/FALSE
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/Day-7-Hangman-5-Start#main.py
 
-### Day 8: February 8h 2022
+### Day 8: February 8th 2022
 
 **Today's Progress**: Function parameters. Defining functions. Built caesar encryption. Prime number checker.
 
 **Thoughts** KINDA HARD.
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/caesar-cipher-4-start#main.py
+
+### Day 9: February 9th 2022
+
+**Today's Progress**: Dictionaries and nests. dictionary = {}. Can be in a list or can include a list.
+
+**Thoughts** KINDA HARD.
+
+**Link(s) to work**: https://replit.com/@AndrewWu21/blind-auction-start-1#main.py
 
 
