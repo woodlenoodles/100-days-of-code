@@ -96,4 +96,10 @@ Kramm said use FLAGS! Boolean = TRUE/FALSE
 
 **Link(s) to work**: https://replit.com/@AndrewWu21/blind-auction-start-1#main.py
 
+Day 10: February 12th 2022
+Today's Progress: Made a calculator using dictionaries, while loops and recursion. Recursion = calling function within its definition but must be associated with conditions!
+
+Thoughts KINDA HARD.
+
+Link(s) to work: https://replit.com/@AndrewWu21/calculator-start#main.py
 
