@@ -110,3 +110,12 @@ Thoughts KINDA HARD.
 
 Link(s) to work: https://replit.com/@AndrewWu21/blackjack-start#main.py
 
+Day 12: February 12th 2022
+Today's Progress: Made a number guessing game. More refined than Blackjack and felt a lot easier to do!
+
+Thoughts KINDA HARD.
+
+Link(s) to work: https://replit.com/@AndrewWu21/guess-the-number-start#main.py
+
+
+
