@@ -103,3 +103,10 @@ Thoughts KINDA HARD.
 
 Link(s) to work: https://replit.com/@AndrewWu21/calculator-start#main.py
 
+Day 11: February 12th 2022
+Today's Progress: Made a working Blackjack game for my first Capstone project!
+
+Thoughts KINDA HARD.
+
+Link(s) to work: https://replit.com/@AndrewWu21/blackjack-start#main.py
+
