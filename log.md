@@ -117,5 +117,12 @@ Thoughts KINDA HARD.
 
 Link(s) to work: https://replit.com/@AndrewWu21/guess-the-number-start#main.py
 
+Day 13: February 13th 2022
+Today's Progress: Debugged code.
+
+Thoughts Meh.
+
+Link(s) to work: No projects.
+
 
 
