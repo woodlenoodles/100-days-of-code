@@ -124,5 +124,10 @@ Thoughts Meh.
 
 Link(s) to work: No projects.
 
+Day 14: February 13th 2022
+Today's Progress: Built Higher/Lower game.
 
+Thoughts Didn't seem so bad! Always a good idea to define functions instead of repeating code.
+
+Link(s) to work: https://replit.com/@AndrewWu21/higher-lower-start#main.py
 
