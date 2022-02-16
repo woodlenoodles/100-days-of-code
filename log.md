@@ -131,3 +131,10 @@ Thoughts Didn't seem so bad! Always a good idea to define functions instead of r
 
 Link(s) to work: https://replit.com/@AndrewWu21/higher-lower-start#main.py
 
+Day 15: February 15th 2022
+Today's Progress: Built a coffee machine using PyCharm
+
+Thoughts Didn't seem so bad! Always a good idea to define functions instead of repeating code <- did this this time!
+
+Link(s) to work: PyCharm file.
+
