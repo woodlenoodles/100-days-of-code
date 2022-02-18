@@ -138,3 +138,10 @@ Thoughts Didn't seem so bad! Always a good idea to define functions instead of r
 
 Link(s) to work: PyCharm file.
 
+Day 16: February 18th 2022
+Today's Progress: Built a coffee machine using PyCharm and OOP!
+
+Thoughts Calling classes must be outside of loops otherwise they keep resetting!!!
+
+Link(s) to work: PyCharm file.
+
