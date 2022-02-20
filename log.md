@@ -145,3 +145,10 @@ Thoughts Calling classes must be outside of loops otherwise they keep resetting!
 
 Link(s) to work: PyCharm file.
 
+Day 17: February 20th 2022
+Today's Progress: Creating classes, attributes and methods using OOP and using them for modular code.
+
+Thoughts Needs work.
+
+Link(s) to work: PyCharm file.
+
