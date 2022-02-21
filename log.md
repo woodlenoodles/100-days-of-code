@@ -152,3 +152,10 @@ Thoughts Needs work.
 
 Link(s) to work: PyCharm file.
 
+Day 18: February 20th 2022
+Today's Progress: Turtle classes, colorgram and generating the Hirst Painting Project
+
+Thoughts: My solution was better lmao.
+
+Link(s) to work: PyCharm file.
+
