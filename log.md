@@ -159,3 +159,42 @@ Thoughts: My solution was better lmao.
 
 Link(s) to work: PyCharm file.
 
+Day 19: February 21th 2022
+Today's Progress: Programming the turtle race
+
+Thoughts: My solution was better lmao.
+
+Link(s) to work: PyCharm file.
+
+Day 20: February 21th 2022
+Today's Progress: Building and animating the snake game. Need work on creating class and OOP. init function is for everything to start up the class when called.
+
+class Snake:
+
+    def __init__(self):
+        self.segments = []
+        self.create_snake()
+        self.head = self.segments[0]
+
+    def create_snake(self):
+        x_pos = 0
+        for i in range(3):
+            snake = Turtle()
+            snake.penup()
+            snake.shape("square")
+            snake.color("white")
+            x_pos -= 20
+            snake.setpos(x_pos, 0)
+            self.segments.append(snake)
+
+    def move_snake(self):
+        for segment in range(len(self.segments) - 1, 0, -1):
+            new_x = self.segments[segment - 1].xcor()
+            new_y = self.segments[segment - 1].ycor()
+            self.segments[segment].setpos(new_x, new_y)
+        self.segments[0].forward(20)
+
+Thoughts: My solution was better lmao.
+
+Link(s) to work: PyCharm file.
+
