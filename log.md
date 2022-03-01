@@ -205,3 +205,12 @@ Today's Progress: Snake Game Pt. 2. Class inheritance and slice lists
 Thoughts: My solution was better lmao.
 
 Link(s) to work: PyCharm file.
+
+Day 22: February 24th 2022
+
+Today's Progress: Pong Game - OOP practice.
+
+Thoughts: My solution was better lmao.
+
+Link(s) to work: PyCharm file.
+
