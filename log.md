@@ -282,3 +282,27 @@ while game_is_on:
 Thoughts: My solution was better lmao.
 
 Link(s) to work: PyCharm file.
+
+Day 24: March 4th 2022
+
+Today's Progress: Files, Directories, Paths
+
+Thoughts: 
+
+# Return all names as a list
+wd = "/Users/andrewwu/OneDrive/PyCham Projects/Mail Merge Project Start"
+with open(wd + "/Input/Names/invited_names.txt") as invited_names:
+    name_list = invited_names.readlines()
+
+# Replace [name] in Input/Letters/"starting_letter.txt"
+for name in name_list:
+    stripped_name = name.strip('\n')
+    with open(wd + "/Input/Letters/starting_letter.txt") as starting_letter:
+        search_text = "[name]"
+        data = starting_letter.read()
+        data = data.replace(search_text, stripped_name)
+
+    with open(wd + f"/Output/ReadyToSend/{name}_letter.txt", mode = "w") as starting_letter:
+        starting_letter.write(data)
+	
+Link(s) to work: PyCharm file.
