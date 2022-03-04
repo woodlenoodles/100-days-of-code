@@ -214,3 +214,71 @@ Thoughts: My solution was better lmao.
 
 Link(s) to work: PyCharm file.
 
+Day 23: March 4th 2022
+
+Today's Progress: Turtle Crossing Game - More OOP Practice
+
+
+class CarManager:
+    def __init__(self):
+        self.all_cars = []
+        self.car_speed = STARTING_MOVE_DISTANCE
+
+    def create_cars(self):
+        random_chance = random.randint(1, 6)
+        if random_chance == 1:
+            new_car = Turtle("square")
+            new_car.shapesize(stretch_len=2)
+            new_car.color(random.choice(COLORS))
+            new_car.penup()
+            random_ycor = random.randint(-250, 250)
+            new_car.setpos(300, random_ycor)
+            self.all_cars.append(new_car)
+
+    def move_cars(self):
+        for car in self.all_cars:
+            car.setheading(180)
+            car.forward(self.car_speed)
+
+    def speed_up(self):
+        self.car_speed += MOVE_INCREMENT
+	
+import time
+from turtle import Screen
+from player import Player
+from car_manager import CarManager
+from scoreboard import Scoreboard
+
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.tracer(0)
+screen.listen()
+
+player = Player()
+cars = CarManager()
+scoreboard = Scoreboard()
+screen.onkey(player.move, "Up")
+
+
+game_is_on = True
+while game_is_on:
+    time.sleep(0.1)
+    screen.update()
+
+    cars.create_cars()
+    cars.move_cars()
+    scoreboard.update_scoreboard()
+
+    for car in cars.all_cars:
+        if car.distance(player) < 20:
+            game_is_on = False
+            scoreboard.game_over()
+
+    if player.ycor() == 280:
+        player.go_home()
+        cars.speed_up()
+        scoreboard.level_up()
+
+Thoughts: My solution was better lmao.
+
+Link(s) to work: PyCharm file.
