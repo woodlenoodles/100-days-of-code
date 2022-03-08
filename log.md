@@ -306,3 +306,70 @@ for name in name_list:
         starting_letter.write(data)
 	
 Link(s) to work: PyCharm file.
+
+Day 25: March 7th 2022
+
+Today's Progress: Files, Directories, Paths. Panda Read CSVs
+
+Thoughts: 
+
+import turtle
+import pandas
+import pandas as pd
+
+screen = turtle.Screen()
+screen.title("U.S. States Game")
+image = "blank_states_img.gif"
+screen.addshape(image)
+
+turtle.shape(image)
+
+data = pandas.read_csv("50_states.csv")
+list_states = data.state.to_list()
+
+
+correct_guesses = []
+
+
+def print_state(x, y):
+    name = turtle.Turtle()
+    name.ht()
+    screen.tracer(1)
+    name.penup()
+    name.color("black")
+    name.setpos(x, y)
+    name.write(answer_state, align = "center", font = ("Arial", 12, "normal"))
+
+
+game_on = True
+score = 0
+while game_on:
+    answer_state = screen.textinput(title=f"{len(correct_guesses)}/50", prompt="What's another State's name?").title()
+    if answer_state.title() in list_states:
+        match = data[data.state == answer_state.title()]
+        print_state(int(match.x), int(match.y))
+        correct_guesses.append(answer_state.title())
+        score += 1
+        if len(correct_guesses) == 50:
+            game_on = False
+    elif answer_state == "done":
+        game_on = False
+        print(f"Your final score is: {score}")
+        states_to_learn = []
+        for states in list_states:
+            if states not in correct_guesses:
+                states_to_learn.append(states)
+        states_to_learn_df = pd.DataFrame(states_to_learn, columns=["States"])
+        states_to_learn_df.to_csv("states_to_learn.csv")
+
+
+
+
+
+
+screen.exitonclick()
+
+
+
+Link(s) to work: PyCharm file.
+
