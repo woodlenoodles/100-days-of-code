@@ -393,3 +393,61 @@ print(output)
 
 Link(s) to work: PyCharm file.
 
+Day 27: March 8th 2022
+
+Today's Progress: *args, **kwargs, GUI using tkinter
+
+Thoughts: 
+
+NOT TOO BAD!
+
+import tkinter
+from tkinter import *
+
+window = tkinter.Tk()
+
+window.minsize(width = 400, height = 100)
+
+window.title("Mile to Km Converter")
+
+window.config(padx = 40, pady = 40)
+
+def calculate():
+    user_input = entry.get()
+    answer = float(user_input) * 1.609344
+    result.config(text = answer)
+
+# Label
+miles = Label(text="Miles", font = ("Arial", 20))
+miles.config(padx = 10, pady = 10)
+miles.grid(column = 3, row = 0)
+
+is_equal_to = Label(text="is equal to", font = ("Arial", 20))
+is_equal_to.config(padx = 10, pady = 10)
+is_equal_to.grid(column = 0, row = 2)
+
+km = Label(text="Km", font = ("Arial", 20))
+km.config(padx = 10, pady = 10)
+km.grid(column = 3, row = 2)
+
+result = Label(text="0", font = ("Arial", 20))
+result.config(padx = 10, pady = 10)
+result.grid(column = 2, row = 2)
+
+# Entry
+
+entry = Entry(width = 10)
+entry.grid(column = 2, row = 0)
+
+
+# Button
+
+button = Button(text="Calculate", command = calculate)
+button.config(padx = 10, pady = 10)
+button.grid(column = 2, row = 3)
+
+window.mainloop()
+
+
+Link(s) to work: PyCharm file.
+
