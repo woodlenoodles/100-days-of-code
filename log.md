@@ -552,3 +552,29 @@ window.mainloop()
 
 Link to work: Pycharm Day 28 file. REFER TO THIS!
 
+Day 29: March 10th 2022
+
+Thoughts:
+
+New things learned = "".join() function
+
+grid(columnspan = )
+
+from tkinter import messagebox (messagebox.())
+
+entry.delete(0, END) <- removes the last typed thing
+
+Don't forget UI setup:
+
+UI Setup
+window = Tk()
+window.title("Password Manager")
+window.config(padx = 20, pady = 20)
+
+# Logo Image
+canvas = Canvas(width = 200, height = 200)
+logo_png = PhotoImage(file = "logo.png")
+canvas.create_image(100, 100, image = logo_png)
+canvas.grid(column = 2, row = 0)
+
+Link to work: PyCharm File Day 29
