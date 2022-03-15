@@ -578,3 +578,59 @@ canvas.create_image(100, 100, image = logo_png)
 canvas.grid(column = 2, row = 0)
 
 Link to work: PyCharm File Day 29
+
+Day 30: March 15th 2022
+
+Thoughts: Learned JSON write, load, update and errors/exceptions
+
+try: function
+
+except: print("Error Found")
+
+except FileNotFoundError:
+
+except KeyError as error_message:
+
+else:
+
+If exceptions occur, else block doesn't get read
+
+raise ErrorClass <- Raising your own error e.g TypeError("This is a made up error")
+
+• usually for inputs that are unrealistic e.g unrealistic heights etc.
+
+Can be nested inside an if statement
+
+JSON Data: JavaScriptObjectNotation
+
+write = json.dump()
+
+read = json.load()
+
+update = json.update()
+
+Create New Dictionary
+new_data = {
+        web_input: {
+            "email": user_input,
+            "password": pass_input,
+        }
+    }
+Create JSON File
+with open("stored_passwords.json", "a") as storage:
+	json.dump(new_data, storage, indent = ) <- indent for readability
+
+with open("stored_passwords.json", "r") as storage:
+	json.load(storage) <- converts json to dictionary
+
+
+            with open("stored_passwords.json", "r") as storage:
+                # Reading old data
+                data = json.load(storage)
+                # Updating old data with new data
+                data.update(new_data)
+		# Adding new data
+            with open("stored_passwords.json", "w") as storage:
+                json.dump(data, storage, indent=4)
+		
+Link to work: PyCharm File
