@@ -634,3 +634,16 @@ with open("stored_passwords.json", "r") as storage:
                 json.dump(data, storage, indent=4)
 		
 Link to work: PyCharm File
+
+Day 31: March 17th 2022
+
+Thoughts: Building the FlashCard App was relatively smooth and straightforward until the end when I had to create a new CSV file 
+
+def remove_word():
+    global french_word
+    flash_dict.pop(f"{french_word}")
+    df = pd.DataFrame(flash_dict.items(), columns = ["French", "English"]) <- Converting dictionary to dataframe would have just given rows. Need .items() to make columns with column names in CSV file. 
+    df.to_csv("data/words_to_learn.csv")
+    generate_word()
+
+Link to work: Day 31 PyCharm file in andrewwu NOT OneDrive
