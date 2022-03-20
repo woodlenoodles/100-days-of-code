@@ -647,3 +647,28 @@ def remove_word():
     generate_word()
 
 Link to work: Day 31 PyCharm file in andrewwu NOT OneDrive
+
+Day 31: March 20th 2022:
+
+Thoughts:
+
+now = dt.datetime.now()
+year = now.year
+month = now.month
+day = now.day
+today = (month, day)
+
+
+df = pandas.read_csv("birthdays.csv")
+
+bday_dict = {(df_row["month"], df_row["day"]): df_row for (index, df_row) in df.iterrows()}
+
+if today in bday_dict:
+    file_path = f"letter_templates/letter_{random.randint(1,3)}.txt"
+    with open(file_path, "r") as file:
+        letter = file.read()
+        letter = letter.replace("[NAME]", bday_dict[today]["name"])
+	
+NEED WORK ON DICTIONARY COMPREHENSION
+
+Link to work: PyCharm File Day 32
