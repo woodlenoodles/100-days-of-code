@@ -672,3 +672,77 @@ if today in bday_dict:
 NEED WORK ON DICTIONARY COMPREHENSION
 
 Link to work: PyCharm File Day 32
+
+Day 33 and 34: March 23, March 24
+
+Thoughts: 
+
+API Endpoints and Parameters. 
+import requests
+requests.get(url = "", params = )
+
+parameters = {}
+
+Class based UI Creation:
+
+class QuizInterface:
+    def __init__(self, quiz_brain: QuizBrain):
+        self.quiz = quiz_brain
+        self.window = Tk()
+        self.window.title("Quizzler")
+        self.window.config(padx = 20, pady = 20, bg = THEME_COLOR)
+
+        self.canvas = Canvas(width = 300, height = 250, bg = "white")
+        self.question_text = self.canvas.create_text(150, 125,
+                                                     text = "Question Text",
+                                                     width = 280,
+                                                     fill = THEME_COLOR,
+                                                     font = ("Arial", 20, "italic"))
+        self.canvas.grid(column = 0, row = 2, columnspan=2, pady = 50)
+
+        true_png = PhotoImage(file = "/Users/andrewwu/PycharmProjects/Day34_APIs/images/true.png")
+        false_png = PhotoImage(file = "/Users/andrewwu/PycharmProjects/Day34_APIs/images/false.png")
+
+        self.true = Button(image = true_png, command = self.correct_pressed)
+        self.true.config(padx = 20, pady = 20)
+        self.true.grid(column = 0, row = 3)
+
+        self.false = Button(image=false_png, command = self.false_pressed)
+        self.false.config(padx=20, pady=20)
+        self.false.grid(column= 1, row=3)
+
+        self.label = Label(text = "Score: 0", bg = THEME_COLOR)
+        self.label.config(padx = 20, pady = 20)
+        self.label.grid(column = 1, row = 0)
+
+
+        self.get_next_question()
+
+
+        self.window.mainloop()
+
+    def get_next_question(self):
+        if self.quiz.still_has_questions():
+            self.canvas.config(bg = "white")
+            self.label.config(text = f"Score: {self.quiz.score}")
+            q_text = self.quiz.next_question()
+            self.canvas.itemconfig(self.question_text, text = q_text)
+        else:
+            self.canvas.itemconfig(self.question_text, text = "You've reached the end of the quiz.")
+            self.true.config(state = "disabled")
+            self.false.config(state = "disabled")
+
+    def correct_pressed(self):
+        self.give_feedback(self.quiz.check_answer("True"))
+
+    def false_pressed(self):
+        self.give_feedback(self.quiz.check_answer("False"))
+
+    def give_feedback(self, correct_answer):
+        if correct_answer:
+            self.canvas.config(bg = "green")
+        else:
+            self.canvas.config(bg = "red")
+        self.window.after(1000, self.get_next_question)
+	
+Link to work: PyCharm file
