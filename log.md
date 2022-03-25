@@ -746,3 +746,70 @@ class QuizInterface:
         self.window.after(1000, self.get_next_question)
 	
 Link to work: PyCharm file
+
+Day 35: March 25th 2022
+
+Thoughts: 
+
+Needed reminding how to use slices. 
+
+Python Slice notation:
+
+a[start:stop]  # items start through stop-1
+a[start:]      # items start through the rest of the array
+a[:stop]       # items from the beginning through stop-1
+a[:]           # a copy of the whole array
+
+import requests
+import os
+from twilio.rest import Client
+
+API_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
+API_KEY = os.environ.get("OWM_API_KEY")
+account_sid = "ACd867b5d32356e81c65fd6bf49f4c3071"
+auth_token = os.environ.get("AUTH_TOKEN")
+twilio_number = "+14342018480"
+LAT = 40.712776
+LONG = -74.005974
+
+parameters = {
+    "lat": LAT,
+    "lon": LONG,
+    "appid": API_KEY,
+    "exclude": "current,minutely,daily",
+}
+
+response = requests.get(url = API_Endpoint, params = parameters)
+response.raise_for_status()
+print(response.status_code)
+data = response.json()
+weather_slice = data["hourly"][:12]
+
+will_rain = False
+
+for hours in weather_slice:
+    condition_code = hours["weather"][0]["id"]
+    if int(condition_code) < 700:
+        will_rain = True
+
+if will_rain:
+    client = Client(account_sid, auth_token)
+    message = client.messages \
+        .create(
+        body="It's currently raining, make sure to bring an umbrella!",
+        from_= twilio_number,
+        to='+16043397468'
+    )
+
+    print(message.status)
+    
+ Environment variables:
+ 
+ in Terminal type "env"
+
+export VARIABLE_NAME=xyz
+
+Then in main.py:
+
+import os
+variable = os.environ.get("VARIABLE_NAME")
