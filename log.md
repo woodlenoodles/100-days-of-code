@@ -813,3 +813,13 @@ Then in main.py:
 
 import os
 variable = os.environ.get("VARIABLE_NAME")
+
+Day 36: March 28th 2022
+
+Thoughts: 
+
+More things to do with list comprehension!
+
+article_list = [f"Headline: {item['title']}. \nBrief: {item['description']}" for item in news_slice] <- can literally do whatever we want with new_item!
+
+Link to work: PyCharm File
